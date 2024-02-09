@@ -76,7 +76,8 @@ getNodeValues (TreeNode left val right : rest) left2Right =
     then val : getNodeValues rest left2Right
     else getNodeValues rest left2Right ++ [val]
 
-getChildren :: Tree a -> [Tree a]
+getChildren :: Tree a -> [Tree a] 
+
 getChildren Nil = []
 getChildren (TreeNode left _ right) = [left, right]
 -- Question 5
